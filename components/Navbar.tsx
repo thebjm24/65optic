@@ -52,7 +52,7 @@ export default function Navbar({ language, setLanguage }: NavbarProps) {
             {/* Language Switcher */}
             <button
               onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
-              className="flex items-center gap-2 px-3 py-2 rounded-lg text-white/80 hover:text-accent transition-colors text-sm"
+              className="flex items-center gap-2 px-3 py-2 rounded-lg text-white/80 hover:text-yellow-500 transition-colors text-sm"
               aria-label="Switch language"
             >
               <Globe size={18} />
@@ -60,7 +60,7 @@ export default function Navbar({ language, setLanguage }: NavbarProps) {
             </button>
 
             {/* CTA Button */}
-            <button className="hidden sm:block px-6 py-2.5 bg-accent text-black font-semibold rounded-lg hover:shadow-lg transition-all">
+            <button className="hidden sm:block px-6 py-2.5 bg-yellow-500 text-black font-semibold rounded-lg hover:shadow-lg transition-all">
               {ctaText}
             </button>
 
@@ -88,7 +88,7 @@ export default function Navbar({ language, setLanguage }: NavbarProps) {
                 {link.label}
               </a>
             ))}
-            <button className="w-full px-6 py-2.5 bg-accent text-black font-semibold rounded-lg hover:shadow-lg transition-all mt-2">
+            <button className="w-full px-6 py-2.5 bg-yellow-500 text-black font-semibold rounded-lg hover:shadow-lg transition-all mt-2">
               {ctaText}
             </button>
           </div>

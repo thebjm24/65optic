@@ -13,7 +13,7 @@ export default function Home() {
         <div className="text-center text-white max-w-2xl px-4">
           <h1 className="text-6xl font-serif font-bold mb-6">See the World Clearly</h1>
           <p className="text-xl text-gray-300 mb-12">Experience Premium Vision Care</p>
-          <button className="px-8 py-4 bg-yellow-600 text-black font-semibold rounded-lg hover:shadow-lg transition-all">
+          <button className="px-8 py-4 bg-yellow-500 text-black font-semibold rounded-lg hover:shadow-lg hover:shadow-yellow-500/50 transition-all">
             Book Now
           </button>
         </div>

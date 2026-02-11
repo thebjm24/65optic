@@ -4,6 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #000000;
+  --color-secondary: #FFFFFF;
+  --color-accent: #C9A227;
+  --color-gray-light: #F5F5F5;
+  --color-gray-dark: #1a1a1a;
+  --font-inter: 'Inter', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-cairo: 'Cairo', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,14 +26,14 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-inter);
   background-color: #ffffff;
   color: #000000;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-playfair);
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -125,3 +136,4 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 1rem;
   }
 }
+
