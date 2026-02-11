@@ -15,10 +15,10 @@ const config: Config = {
         'gray-dark': '#1a1a1a',
       },
       fontFamily: {
-        'sans': ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        'serif': ['var(--font-playfair)', 'serif'],
-        'display': ['var(--font-playfair)', 'serif'],
-        'arabic': ['var(--font-cairo)', 'sans-serif'],
+        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'serif': ['Playfair Display', 'serif'],
+        'display': ['Playfair Display', 'serif'],
+        'arabic': ['Cairo', 'sans-serif'],
       },
       fontSize: {
         'xs': '12px',
