@@ -1,4 +1,3 @@
-
 import { Language, Translations } from './types';
 
 // Using literal emojis directly is the most reliable method for modern browsers.
@@ -73,11 +72,12 @@ export const getWhatsAppMessage = (lang: Language, data: any) => {
   const { firstName, lastName, age, date, time } = data;
   
   if (lang === 'ar') {
-    return `مرحباً 65 Optic ${EMOJIS.WAVE}\n\nأرغب في حجز موعد لفحص النظر.\n\n${EMOJIS.USER} الاسم: ${firstName} ${lastName}\n${EMOJIS.CAKE} العمر: ${age}\n${EMOJIS.CALENDAR} التاريخ المفضل: ${date}\n${EMOJIS.CLOCK} الوقت المفضل: ${time}\n\nشكراً لكم ${EMOJIS.PRAY}`;
+    return `65 Optic ${EMOJIS.WAVE} أرغب في حجز موعد لفحص النظر.\n\n${EMOJIS.USER} الاسم: ${firstName} ${lastName}\n${EMOJIS.CAKE} العمر: ${age}\n${EMOJIS.CALENDAR} التاريخ المفضل: ${date}\n${EMOJIS.CLOCK} الوقت المفضل: ${time}\n\nشكراً لكم ${EMOJIS.PRAY}`;
   }
   
   if (lang === 'fr') {
     return `Bonjour 65 Optic ${EMOJIS.WAVE}\n\nJe souhaite prendre un rendez-vous pour un examen de la vue.\n\n${EMOJIS.USER} Nom: ${firstName} ${lastName}\n${EMOJIS.CAKE} Âge: ${age}\n${EMOJIS.CALENDAR} Date souhaitée: ${date}\n${EMOJIS.CLOCK} Heure souhaitée: ${time}\n\nMerci ${EMOJIS.PRAY}`;
   }
   
-  return `Hello 65 Optic ${EMOJIS.WAVE}\n\nI would like to book an eye appointment.\n\n${EMOJ
+  return `Hello 65 Optic ${EMOJIS.WAVE}\n\nI would like to book an eye appointment.\n\n${EMOJIS.USER} Name: ${firstName} ${lastName}\n${EMOJIS.CAKE} Age: ${age}\n${EMOJIS.CALENDAR} Preferred Date: ${date}\n${EMOJIS.CLOCK} Preferred Time: ${time}\n\nThank you ${EMOJIS.PRAY}`;
+};
