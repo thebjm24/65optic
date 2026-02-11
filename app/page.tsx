@@ -1,23 +1,20 @@
-'use client'
-
-import { useState } from 'react'
-import Navbar from '@/components/Navbar'
-
 export default function Home() {
-  const [language, setLanguage] = useState<'en' | 'ar'>('en')
-
   return (
-    <main className="w-full bg-white">
-      <Navbar language={language} setLanguage={setLanguage} />
-      <section className="h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center">
-        <div className="text-center text-white max-w-2xl px-4">
-          <h1 className="text-6xl font-serif font-bold mb-6">See the World Clearly</h1>
-          <p className="text-xl text-gray-300 mb-12">Experience Premium Vision Care</p>
-          <button className="px-8 py-4 bg-yellow-500 text-black font-semibold rounded-lg hover:shadow-lg hover:shadow-yellow-500/50 transition-all">
-            Book Now
-          </button>
-        </div>
-      </section>
-    </main>
+    <div style={{ width: '100%', minHeight: '100vh', backgroundColor: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ textAlign: 'center', padding: '2rem' }}>
+        <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: '4rem', fontWeight: 700, color: '#fff', marginBottom: '1rem' }}>
+          65 OPTIC
+        </h1>
+        <p style={{ fontSize: '1.25rem', color: '#C9A227', marginBottom: '0.5rem' }}>
+          See the World Clearly
+        </p>
+        <p style={{ fontSize: '1rem', color: '#999', marginBottom: '2rem' }}>
+          Premium Eyewear & Vision Care
+        </p>
+        <button style={{ padding: '1rem 2rem', backgroundColor: '#C9A227', color: '#000', fontWeight: 600, border: 'none', borderRadius: '8px', fontSize: '1rem', cursor: 'pointer' }}>
+          Book Appointment
+        </button>
+      </div>
+    </div>
   )
 }
