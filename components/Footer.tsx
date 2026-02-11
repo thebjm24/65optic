@@ -14,12 +14,12 @@ export default function Footer({ language }: FooterProps) {
   const terms = language === 'en' ? 'Terms of Service' : 'شروط الخدمة'
 
   return (
-    <footer className="bg-primary text-white">
-      <div className="container-max py-16">
+    <footer className="bg-black text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-2xl font-bold mb-4">{companyName}</h3>
+            <h3 className="font-serif text-2xl font-bold mb-4">{companyName}</h3>
             <p className="text-white/60 text-sm">
               {language === 'en'
                 ? 'Premium eyewear and vision care for the modern individual.'

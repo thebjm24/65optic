@@ -26,12 +26,12 @@ export default function Navbar({ language, setLanguage }: NavbarProps) {
   const ctaText = language === 'en' ? 'Book Appointment' : 'احجز موعد'
 
   return (
-    <nav className="fixed top-0 w-full z-50 glass-dark backdrop-blur-md border-b border-white/10">
-      <div className="container-max">
+    <nav className="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-display font-bold text-white">65 OPTIC</h1>
+            <h1 className="text-2xl font-serif font-bold text-white">65 OPTIC</h1>
           </div>
 
           {/* Desktop Navigation */}
@@ -60,7 +60,7 @@ export default function Navbar({ language, setLanguage }: NavbarProps) {
             </button>
 
             {/* CTA Button */}
-            <button className="hidden sm:block px-6 py-2.5 bg-accent text-primary font-semibold rounded-lg hover:glow transition-all">
+            <button className="hidden sm:block px-6 py-2.5 bg-accent text-black font-semibold rounded-lg hover:shadow-lg transition-all">
               {ctaText}
             </button>
 
@@ -88,7 +88,7 @@ export default function Navbar({ language, setLanguage }: NavbarProps) {
                 {link.label}
               </a>
             ))}
-            <button className="w-full px-6 py-2.5 bg-accent text-primary font-semibold rounded-lg hover:glow transition-all mt-2">
+            <button className="w-full px-6 py-2.5 bg-accent text-black font-semibold rounded-lg hover:shadow-lg transition-all mt-2">
               {ctaText}
             </button>
           </div>

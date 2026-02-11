@@ -22,8 +22,8 @@ export default function ContactSection({ language }: ContactProps) {
 
   return (
     <section id="contact" className="py-32 px-4 bg-white">
-      <div className="container-max">
-        <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-20 text-center">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold text-black mb-20 text-center">
           {title}
         </h2>
 
@@ -48,7 +48,7 @@ export default function ContactSection({ language }: ContactProps) {
                 </div>
               </div>
               <div>
-                <h3 className="font-display text-lg font-bold text-primary mb-1">
+                <h3 className="font-serif text-lg font-bold text-black mb-1">
                   {language === 'en' ? 'Location' : 'الموقع'}
                 </h3>
                 <p className="text-gray-600">{address}</p>
@@ -63,7 +63,7 @@ export default function ContactSection({ language }: ContactProps) {
                 </div>
               </div>
               <div>
-                <h3 className="font-display text-lg font-bold text-primary mb-1">
+                <h3 className="font-serif text-lg font-bold text-black mb-1">
                   {language === 'en' ? 'Phone' : 'الهاتف'}
                 </h3>
                 <a href={`tel:${phone}`} className="text-gray-600 hover:text-accent transition-colors">
@@ -80,7 +80,7 @@ export default function ContactSection({ language }: ContactProps) {
                 </div>
               </div>
               <div>
-                <h3 className="font-display text-lg font-bold text-primary mb-1">
+                <h3 className="font-serif text-lg font-bold text-black mb-1">
                   {language === 'en' ? 'WhatsApp' : 'واتساب'}
                 </h3>
                 <a href={`https://wa.me/${whatsapp.replace(/\D/g, '')}`} className="text-gray-600 hover:text-accent transition-colors">
@@ -97,7 +97,7 @@ export default function ContactSection({ language }: ContactProps) {
                 </div>
               </div>
               <div>
-                <h3 className="font-display text-lg font-bold text-primary mb-2">
+                <h3 className="font-serif text-lg font-bold text-black mb-2">
                   {hoursTitle}
                 </h3>
                 <div className="space-y-1">
@@ -114,7 +114,7 @@ export default function ContactSection({ language }: ContactProps) {
 
         {/* CTA Button */}
         <div className="flex justify-center">
-          <button className="group px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:glow transition-all flex items-center gap-2">
+          <button className="group px-8 py-4 bg-black text-white font-semibold rounded-lg hover:shadow-lg transition-all flex items-center gap-2">
             {btnText}
             <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />

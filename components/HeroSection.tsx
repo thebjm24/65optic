@@ -20,17 +20,17 @@ export default function HeroSection({ language }: HeroProps) {
   return (
     <section id="home" className="relative w-full h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-gray-dark to-primary opacity-90"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-dark to-black opacity-90"></div>
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse delay-700"></div>
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '0.7s'}}></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container-max text-center max-w-4xl mx-auto px-4">
-        <h1 className="font-display text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in text-balance">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
+        <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
           {title}
         </h1>
         
@@ -44,7 +44,7 @@ export default function HeroSection({ language }: HeroProps) {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
-          <button className="group px-8 py-4 bg-accent text-primary font-semibold rounded-lg hover:glow transition-all flex items-center justify-center gap-2">
+          <button className="group px-8 py-4 bg-accent text-black font-semibold rounded-lg hover:shadow-lg hover:shadow-accent/50 transition-all flex items-center justify-center gap-2">
             <MessageCircle size={20} />
             {whatsappBtn}
           </button>

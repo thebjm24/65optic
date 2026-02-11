@@ -41,9 +41,9 @@ export default function TestimonialsSection({ language }: TestimonialsProps) {
   const testimonial = testimonials[current]
 
   return (
-    <section className="py-32 px-4 bg-primary">
-      <div className="container-max max-w-4xl mx-auto">
-        <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-20 text-center">
+    <section className="py-32 px-4 bg-black">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-20 text-center">
           {title}
         </h2>
 
@@ -57,7 +57,7 @@ export default function TestimonialsSection({ language }: TestimonialsProps) {
 
           {/* Quote */}
           <blockquote className="text-center mb-8">
-            <p className="font-display text-2xl md:text-3xl text-white mb-6 italic text-balance">
+            <p className="font-serif text-2xl md:text-3xl text-white mb-6 italic">
               "{language === 'en' ? testimonial.quoteEn : testimonial.quoteAr}"
             </p>
             <p className="text-accent font-semibold">

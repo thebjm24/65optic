@@ -15,8 +15,10 @@ const config: Config = {
         'gray-dark': '#1a1a1a',
       },
       fontFamily: {
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
-        'display': ['Playfair Display', 'serif'],
+        'sans': ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        'serif': ['var(--font-playfair)', 'serif'],
+        'display': ['var(--font-playfair)', 'serif'],
+        'arabic': ['var(--font-cairo)', 'sans-serif'],
       },
       fontSize: {
         'xs': '12px',
@@ -57,13 +59,10 @@ const config: Config = {
           '50%': { boxShadow: '0 0 40px rgba(201, 162, 39, 0.6)' },
         },
       },
-      backdropFilter: {
-        'blur-sm': 'blur(4px)',
-        'blur-md': 'blur(12px)',
-      },
     },
   },
   plugins: [],
 }
 
 export default config
+

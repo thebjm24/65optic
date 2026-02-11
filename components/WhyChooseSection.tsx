@@ -34,8 +34,8 @@ export default function WhyChooseSection({ language }: WhyChooseProps) {
 
   return (
     <section id="about" className="py-32 px-4 bg-white">
-      <div className="container-max">
-        <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-20 text-center">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold text-black mb-20 text-center">
           {title}
         </h2>
 
@@ -47,7 +47,7 @@ export default function WhyChooseSection({ language }: WhyChooseProps) {
                 <svg className="w-32 h-32 mx-auto text-accent/30 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M12 8v13m0-13V3m0 0a9 9 0 110 18 9 9 0 010-18z" />
                 </svg>
-                <p className="text-accent/50 font-display text-2xl">Premium Eyewear</p>
+                <p className="text-accent/50 font-serif text-2xl">Premium Eyewear</p>
               </div>
             </div>
           </div>
@@ -58,12 +58,12 @@ export default function WhyChooseSection({ language }: WhyChooseProps) {
               {features.map((feature, index) => (
                 <div key={index} className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-accent text-primary">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-accent text-black">
                       <Check size={24} className="font-bold" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-display text-xl font-bold text-primary mb-2">
+                    <h3 className="font-serif text-xl font-bold text-black mb-2">
                       {language === 'en' ? feature.titleEn : feature.titleAr}
                     </h3>
                     <p className="text-gray-600">

@@ -15,8 +15,8 @@ export default function BrandStatement({ language }: BrandStatementProps) {
 
   return (
     <section className="py-32 md:py-48 px-4 bg-white">
-      <div className="container-max max-w-3xl mx-auto text-center">
-        <h2 className="font-display text-4xl md:text-6xl font-bold text-primary mb-8 animate-fade-in text-balance">
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="font-serif text-4xl md:text-6xl font-bold text-black mb-8 animate-fade-in">
           {mainText}
         </h2>
         

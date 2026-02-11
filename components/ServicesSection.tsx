@@ -42,8 +42,8 @@ export default function ServicesSection({ language }: ServicesProps) {
 
   return (
     <section id="services" className="py-32 px-4 bg-gray-light">
-      <div className="container-max">
-        <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-20 text-center">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold text-black mb-20 text-center">
           {title}
         </h2>
 
@@ -56,13 +56,13 @@ export default function ServicesSection({ language }: ServicesProps) {
             return (
               <div
                 key={index}
-                className="group bg-white p-8 rounded-2xl shadow-sm hover-lift hover:shadow-lg transition-all"
+                className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2"
               >
                 <div className="mb-6 inline-block p-4 bg-accent/10 rounded-lg group-hover:bg-accent/20 transition-colors">
                   <Icon size={32} className="text-accent" />
                 </div>
 
-                <h3 className="font-display text-xl font-bold text-primary mb-3">
+                <h3 className="font-serif text-xl font-bold text-black mb-3">
                   {title}
                 </h3>
 
