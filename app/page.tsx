@@ -119,11 +119,9 @@ export default function Home() {
       <div className="fixed inset-0 bg-white flex items-center justify-center z-50">
         <div className="animate-fade-in flex flex-col items-center">
           <div className="mb-8 rounded-full bg-black p-6 animate-bounce">
-            <Image
+            <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20260212_095647_0000-Fhe4m7XUJ0acqYk6rCS9mtUb7idRfY.png"
               alt="65 Optic Logo"
-              width={100}
-              height={100}
               className="w-24 h-24"
             />
           </div>
