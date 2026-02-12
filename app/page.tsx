@@ -183,11 +183,13 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [testimonialIdx, setTestimonialIdx] = useState(0)
   const [scrolled, setScrolled] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   const txt = t[lang]
   const isRtl = lang === 'ar'
 
   useEffect(() => {
+    setMounted(true)
     const onScroll = () => setScrolled(window.scrollY > 50)
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
@@ -213,7 +215,7 @@ export default function Home() {
   return (
     <div dir={isRtl ? 'rtl' : 'ltr'} className="w-full">
       {/* ===== NAVBAR ===== */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${mounted && scrolled ? 'bg-black/90 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <h1 className="text-2xl font-serif font-bold text-white tracking-wide">65 OPTIC</h1>
@@ -514,7 +516,7 @@ export default function Home() {
           </div>
           <div className="border-t border-white/10 pt-7">
             <div className="flex flex-col md:flex-row justify-between items-center text-white/40 text-xs">
-              <p>&copy; {new Date().getFullYear()} 65 OPTIC. {txt.rights}.</p>
+              <p>&copy; 2025 65 OPTIC. {txt.rights}.</p>
               <div className="flex gap-5 mt-3 md:mt-0">
                 <a href="#" className="hover:text-[#C9A227] transition-colors">{txt.privacy}</a>
                 <a href="#" className="hover:text-[#C9A227] transition-colors">{txt.terms}</a>
