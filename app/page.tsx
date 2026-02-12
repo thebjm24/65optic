@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import { Menu, X, Globe, Phone, MapPin, Clock, Facebook, Instagram, MessageCircle, ChevronLeft, ChevronRight, Star, Check, Eye, Glasses, Sun, Wrench, ArrowRight } from 'lucide-react'
 
 type Lang = 'en' | 'ar' | 'fr'
@@ -224,7 +223,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="relative w-full h-screen flex items-center justify-center overflow-hidden pt-20">
-        <Image src="/hero-eyewear.jpg" alt="Hero" fill className="object-cover" priority />
+        <div className="absolute inset-0" style={{ backgroundImage: 'url(/hero-eyewear.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">{t.hero.title}</h1>
@@ -287,10 +286,9 @@ export default function Home() {
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-20 text-center">{t.collection.title}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {['/glasses-1.jpg', '/glasses-2.jpg', '/glasses-3.jpg', '/glasses-4.jpg'].map((img, i) => (
-              <div key={i} className="group relative h-80 rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer">
-                <Image src={img} alt={`Glasses ${i+1}`} fill className="object-cover" />
+              <div key={i} className="group relative h-80 rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer" style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all flex items-center justify-center">
-                  <span className="text-white opacity-0 group-hover:opacity-100 font-semibold">View</span>
+                  <span className="text-white opacity-0 group-hover:opacity-100 font-semibold">{['Classic', 'Modern', 'Sport', 'Designer'][i]}</span>
                 </div>
               </div>
             ))}
@@ -309,7 +307,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-black mb-20 text-center">{t.why.title}</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <Image src="/hero-eyewear.jpg" alt="Why Choose" width={500} height={400} className="rounded-2xl" />
+            <div className="relative w-full h-96 rounded-2xl overflow-hidden" style={{ backgroundImage: 'url(/hero-eyewear.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
             <div className="space-y-6">
               {[t.why.equipment, t.why.brands, t.why.care, t.why.price].map((item, i) => (
                 <div key={i} className="flex gap-4">
