@@ -118,11 +118,11 @@ export default function Home() {
     return (
       <div className="fixed inset-0 bg-white flex items-center justify-center z-50">
         <div className="animate-fade-in flex flex-col items-center">
-          <div className="mb-8 rounded-full bg-black p-6 animate-bounce">
+          <div className="mb-8 animate-bounce">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20260212_095647_0000-Fhe4m7XUJ0acqYk6rCS9mtUb7idRfY.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20260212_095647_0000-MteEWzo3eb8jhesMoeQemXLwOQHEhd.png"
               alt="65 Optic Logo"
-              className="w-24 h-24"
+              className="w-32 h-32"
             />
           </div>
           <h1 className="font-serif text-4xl font-bold text-black">65 OPTIC</h1>
@@ -177,11 +177,13 @@ export default function Home() {
       {/* Navbar */}
       <nav className={`fixed top-0 w-full z-40 transition-all duration-300 ${scrolled ? 'bg-black/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-white p-1 flex items-center justify-center">
-              <span className="font-serif text-lg font-bold text-black">65</span>
-            </div>
-            <span className="font-serif text-xl font-bold text-white hidden sm:block">OPTIC</span>
+          <div className="flex items-center gap-2">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20260212_095647_0000-MteEWzo3eb8jhesMoeQemXLwOQHEhd.png"
+              alt="65 Optic Logo"
+              className="w-12 h-12"
+            />
+            <span className="font-serif text-xl font-bold text-white hidden sm:block">65 OPTIC</span>
           </div>
 
           <div className="hidden md:flex gap-8">
